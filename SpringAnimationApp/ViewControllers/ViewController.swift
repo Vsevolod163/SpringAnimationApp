@@ -10,14 +10,9 @@ import SpringAnimation
 
 final class ViewController: UIViewController {
 
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet var springView: SpringView!
 
-    }
-
-    @IBAction func runAnimation(_ sender: SpringButton) {
+    @IBAction func runAnimation(_ sender: UIButton) {
         
     }
 }
