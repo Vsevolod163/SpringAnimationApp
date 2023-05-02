@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C61247FD2A013BAE00DB8699 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = C61247FC2A013BAE00DB8699 /* SpringAnimation */; };
+		C61248002A013C6200DB8699 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61247FF2A013C6200DB8699 /* DataStorage.swift */; };
 		C62F3A312A013377001CC5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3A302A013377001CC5BF /* AppDelegate.swift */; };
 		C62F3A332A013377001CC5BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3A322A013377001CC5BF /* SceneDelegate.swift */; };
 		C62F3A352A013377001CC5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3A342A013377001CC5BF /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C61247FF2A013C6200DB8699 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		C62F3A2D2A013377001CC5BF /* SpringAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62F3A302A013377001CC5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C62F3A322A013377001CC5BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C61247FE2A013C5100DB8699 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C61247FF2A013C6200DB8699 /* DataStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C62F3A242A013377001CC5BF = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 			children = (
 				C62F3A472A0133B6001CC5BF /* ViewControllers */,
 				C62F3A462A0133AF001CC5BF /* Storyboards */,
+				C61247FE2A013C5100DB8699 /* Services */,
 				C62F3A452A0133A1001CC5BF /* Sources */,
 				C62F3A442A013396001CC5BF /* App */,
 			);
@@ -181,6 +192,7 @@
 				C62F3A352A013377001CC5BF /* ViewController.swift in Sources */,
 				C62F3A312A013377001CC5BF /* AppDelegate.swift in Sources */,
 				C62F3A332A013377001CC5BF /* SceneDelegate.swift in Sources */,
+				C61248002A013C6200DB8699 /* DataStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
