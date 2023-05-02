@@ -26,12 +26,15 @@ final class MainViewController: UIViewController {
         setUI(animation)
     }
     
-    @IBAction private func runAnimation(_ sender: UIButton) {
+    @IBAction private func runAnimation(_ sender: SpringButton) {
+        sender.animation = "fadeIn"
+        sender.duration = 3
+        sender.animate()
+        
         if shared.animation == "" {
             springView.animate()
             
             let animation = shared.animations.randomElement() ?? ""
-            
             sender.setTitle("Run \(animation)", for: .normal)
             shared.animation = animation
         } else {
@@ -40,7 +43,7 @@ final class MainViewController: UIViewController {
             
             animation = shared.animations.randomElement() ?? ""
             shared.animation = animation
-            
+
             sender.setTitle("Run \(animation)", for: .normal)
             springView.animate()
         }
