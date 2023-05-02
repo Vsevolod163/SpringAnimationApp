@@ -8,15 +8,15 @@
 import UIKit
 import SpringAnimation
 
-final class ViewController: UIViewController {
+final class MainViewController: UIViewController {
 
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
+    @IBOutlet private var presetLabel: UILabel!
+    @IBOutlet private var curveLabel: UILabel!
+    @IBOutlet private var forceLabel: UILabel!
+    @IBOutlet private var durationLabel: UILabel!
+    @IBOutlet private var delayLabel: UILabel!
     
-    @IBOutlet var springView: SpringView!
+    @IBOutlet private var springView: SpringView!
     
     private let shared = DataStorage.shared
     
@@ -26,8 +26,8 @@ final class ViewController: UIViewController {
         setUI(animation)
     }
     
-    @IBAction func runAnimation(_ sender: UIButton) {
-        if sender.currentTitle == "Run" {
+    @IBAction private func runAnimation(_ sender: UIButton) {
+        if shared.animation == "" {
             springView.animate()
             
             let animation = shared.animations.randomElement() ?? ""
