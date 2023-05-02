@@ -6,7 +6,7 @@
 //
 
 final class DataStorage {
-    let shared = DataStorage()
+    static let shared = DataStorage()
     
     let animations = [
         "pop",

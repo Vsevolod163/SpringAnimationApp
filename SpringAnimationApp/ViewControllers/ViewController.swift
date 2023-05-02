@@ -16,9 +16,17 @@ final class ViewController: UIViewController {
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     
+    private let shared = DataStorage.shared
+    
     @IBOutlet var springView: SpringView!
 
     @IBAction func runAnimation(_ sender: UIButton) {
+        let animation = shared.animations.randomElement()
+        let curve = shared.curves.randomElement()
+        let force = Float.random(in: 0.0...2.0)
+        let duration = Float.random(in: 0.0...2.0)
+        let delay = Float.random(in: 0.0...2.0)
+        
         
     }
 }
