@@ -98,6 +98,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="curveLabel" destination="U6R-Ge-Ubn" id="aSG-D5-dIK"/>
+                        <outlet property="delayLabel" destination="zGQ-LE-WcB" id="JmF-p0-3c7"/>
+                        <outlet property="durationLabel" destination="nty-ys-Sya" id="PDt-it-69I"/>
+                        <outlet property="forceLabel" destination="sEU-Go-ePJ" id="Fda-kX-E0T"/>
+                        <outlet property="presetLabel" destination="VHv-Xx-Xsp" id="juZ-YT-x39"/>
                         <outlet property="springView" destination="XEg-PA-7eT" id="Bhm-Kg-EKs"/>
                     </connections>
                 </viewController>

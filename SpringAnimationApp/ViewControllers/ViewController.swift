@@ -10,6 +10,12 @@ import SpringAnimation
 
 final class ViewController: UIViewController {
 
+    @IBOutlet var presetLabel: UILabel!
+    @IBOutlet var curveLabel: UILabel!
+    @IBOutlet var forceLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
+    @IBOutlet var delayLabel: UILabel!
+    
     @IBOutlet var springView: SpringView!
 
     @IBAction func runAnimation(_ sender: UIButton) {
