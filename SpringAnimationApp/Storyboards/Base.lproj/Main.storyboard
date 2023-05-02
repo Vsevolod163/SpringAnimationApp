@@ -65,11 +65,19 @@
                                     <constraint firstAttribute="height" constant="150" id="qRq-OP-QuC"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-AJ-2pt">
+                                <rect key="frame" x="16" y="391.5" width="288" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dFp-AJ-2pt" firstAttribute="width" secondItem="XEg-PA-7eT" secondAttribute="width" multiplier="1:1" id="GRb-x5-xZq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dFp-AJ-2pt" secondAttribute="bottom" multiplier="4:3" id="M4c-E8-TDR"/>
                             <constraint firstItem="XEg-PA-7eT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ntc-uL-6oh"/>
+                            <constraint firstItem="dFp-AJ-2pt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VD5-J7-MVI"/>
                             <constraint firstItem="XEg-PA-7eT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="r12-ZY-IZp"/>
                         </constraints>
                     </view>
