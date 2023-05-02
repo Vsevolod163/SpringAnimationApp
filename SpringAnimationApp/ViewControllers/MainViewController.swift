@@ -52,11 +52,11 @@ final class MainViewController: UIViewController {
         let duration = Float.random(in: 0.1...2.0)
         let delay = Float.random(in: 0.1...2.0)
         
-        presetLabel.text = animation
-        curveLabel.text = curve
-        forceLabel.text = String(force)
-        durationLabel.text = String(duration)
-        delayLabel.text = String(delay)
+        presetLabel.text = "preset: \(animation)"
+        curveLabel.text = "curve: \(curve ?? "")"
+        forceLabel.text = "force: \(String(format: "%.2f", force))"
+        durationLabel.text = "duration: \(String(format: "%.2f", duration))"
+        delayLabel.text = "delay: \(String(format: "%.2f", delay))"
         
         springView.animation = animation
         springView.curve = curve ?? ""
