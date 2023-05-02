@@ -16,18 +16,53 @@ final class ViewController: UIViewController {
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     
+    @IBOutlet var springView: SpringView!
+    
     private let shared = DataStorage.shared
     
-    @IBOutlet var springView: SpringView!
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let animation = shared.animations.randomElement() ?? ""
+        setUI(animation)
+    }
+    
     @IBAction func runAnimation(_ sender: UIButton) {
-        let animation = shared.animations.randomElement()
+        if sender.currentTitle == "Run" {
+            springView.animate()
+            
+            let animation = shared.animations.randomElement() ?? ""
+            
+            sender.setTitle("Run \(animation)", for: .normal)
+            shared.animation = animation
+        } else {
+            var animation = shared.animation
+            setUI(animation)
+            
+            animation = shared.animations.randomElement() ?? ""
+            shared.animation = animation
+            
+            sender.setTitle("Run \(animation)", for: .normal)
+            springView.animate()
+        }
+    }
+    
+    private func setUI(_ animation: String) {
         let curve = shared.curves.randomElement()
-        let force = Float.random(in: 0.0...2.0)
-        let duration = Float.random(in: 0.0...2.0)
-        let delay = Float.random(in: 0.0...2.0)
+        let force = Float.random(in: 0.1...2.0)
+        let duration = Float.random(in: 0.1...2.0)
+        let delay = Float.random(in: 0.1...2.0)
         
+        presetLabel.text = animation
+        curveLabel.text = curve
+        forceLabel.text = String(force)
+        durationLabel.text = String(duration)
+        delayLabel.text = String(delay)
         
+        springView.animation = animation
+        springView.curve = curve ?? ""
+        springView.force = CGFloat(force)
+        springView.duration = CGFloat(duration)
+        springView.delay = CGFloat(delay)
     }
 }
 

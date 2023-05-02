@@ -70,5 +70,7 @@ final class DataStorage {
         "easeInOutBack"
     ]
     
+    var animation: String = ""
+    
     private init() {}
 }
