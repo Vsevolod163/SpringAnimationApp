@@ -65,12 +65,12 @@
                                     <constraint firstAttribute="height" constant="150" id="qRq-OP-QuC"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-AJ-2pt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-AJ-2pt" customClass="SpringButton" customModule="SpringAnimation">
                                 <rect key="frame" x="16" y="391.5" width="288" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="runAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hcl-Tk-CY1"/>
+                                    <action selector="runAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHa-Eb-CZi"/>
                                 </connections>
                             </button>
                         </subviews>

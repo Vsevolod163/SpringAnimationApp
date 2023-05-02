@@ -16,7 +16,7 @@ final class ViewController: UIViewController {
 
     }
 
-    @IBAction func runAnimation(_ sender: UIButton) {
+    @IBAction func runAnimation(_ sender: SpringButton) {
         
     }
 }
