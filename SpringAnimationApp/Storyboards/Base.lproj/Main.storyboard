@@ -18,49 +18,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEg-PA-7eT" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="16" y="40" width="288" height="150"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-op-4el">
-                                        <rect key="frame" x="16" y="8" width="256" height="134.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-Xx-Xsp">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6R-Ge-Ubn">
-                                                <rect key="frame" x="0.0" y="28.5" width="256" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEU-Go-ePJ">
-                                                <rect key="frame" x="0.0" y="57" width="256" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nty-ys-Sya">
-                                                <rect key="frame" x="0.0" y="85.5" width="256" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGQ-LE-WcB">
-                                                <rect key="frame" x="0.0" y="114" width="256" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="BOP-op-4el" firstAttribute="centerY" secondItem="XEg-PA-7eT" secondAttribute="centerY" id="6NN-HK-ffD"/>
-                                    <constraint firstItem="BOP-op-4el" firstAttribute="leading" secondItem="XEg-PA-7eT" secondAttribute="leading" constant="16" id="6gT-fe-UJU"/>
-                                    <constraint firstItem="BOP-op-4el" firstAttribute="centerX" secondItem="XEg-PA-7eT" secondAttribute="centerX" id="FI2-jk-K8n"/>
-                                    <constraint firstAttribute="trailing" secondItem="BOP-op-4el" secondAttribute="trailing" constant="16" id="Pje-QH-w43"/>
                                     <constraint firstAttribute="width" constant="288" id="eL4-S1-lPg"/>
                                     <constraint firstAttribute="height" constant="150" id="qRq-OP-QuC"/>
                                 </constraints>
@@ -88,24 +47,29 @@
                                     <action selector="runAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUz-UT-v0X"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2C-Sz-rSj" customClass="SpringLabel" customModule="SpringAnimation">
+                                <rect key="frame" x="16" y="274" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="F2C-Sz-rSj" firstAttribute="width" secondItem="XEg-PA-7eT" secondAttribute="width" multiplier="1:1" id="Fx2-6k-Bwo"/>
                             <constraint firstItem="dFp-AJ-2pt" firstAttribute="width" secondItem="XEg-PA-7eT" secondAttribute="width" multiplier="1:1" id="GRb-x5-xZq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dFp-AJ-2pt" secondAttribute="bottom" multiplier="8:7" id="M4c-E8-TDR"/>
+                            <constraint firstItem="F2C-Sz-rSj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MKR-Qf-XKS"/>
                             <constraint firstItem="XEg-PA-7eT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ntc-uL-6oh"/>
+                            <constraint firstItem="F2C-Sz-rSj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMd-pt-DuG"/>
                             <constraint firstItem="dFp-AJ-2pt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VD5-J7-MVI"/>
                             <constraint firstItem="XEg-PA-7eT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="r12-ZY-IZp"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="U6R-Ge-Ubn" id="aSG-D5-dIK"/>
-                        <outlet property="delayLabel" destination="zGQ-LE-WcB" id="JmF-p0-3c7"/>
-                        <outlet property="durationLabel" destination="nty-ys-Sya" id="PDt-it-69I"/>
-                        <outlet property="forceLabel" destination="sEU-Go-ePJ" id="Fda-kX-E0T"/>
-                        <outlet property="presetLabel" destination="VHv-Xx-Xsp" id="juZ-YT-x39"/>
-                        <outlet property="springView" destination="XEg-PA-7eT" id="Bhm-Kg-EKs"/>
+                        <outlet property="animationLabel" destination="F2C-Sz-rSj" id="5fv-r9-gus"/>
+                        <outlet property="animationView" destination="XEg-PA-7eT" id="SNE-JU-ufo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

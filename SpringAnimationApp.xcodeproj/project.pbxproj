@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C61247FD2A013BAE00DB8699 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = C61247FC2A013BAE00DB8699 /* SpringAnimation */; };
-		C61248002A013C6200DB8699 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61247FF2A013C6200DB8699 /* DataStorage.swift */; };
+		C61248002A013C6200DB8699 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61247FF2A013C6200DB8699 /* DataStore.swift */; };
 		C62F3A312A013377001CC5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3A302A013377001CC5BF /* AppDelegate.swift */; };
 		C62F3A332A013377001CC5BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3A322A013377001CC5BF /* SceneDelegate.swift */; };
 		C62F3A352A013377001CC5BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3A342A013377001CC5BF /* MainViewController.swift */; };
 		C62F3A382A013377001CC5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62F3A362A013377001CC5BF /* Main.storyboard */; };
 		C62F3A3A2A013378001CC5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62F3A392A013378001CC5BF /* Assets.xcassets */; };
 		C62F3A3D2A013378001CC5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62F3A3B2A013378001CC5BF /* LaunchScreen.storyboard */; };
+		C6E4803F2A042B5E00CBE286 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4803E2A042B5E00CBE286 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C61247FF2A013C6200DB8699 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		C61247FF2A013C6200DB8699 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		C62F3A2D2A013377001CC5BF /* SpringAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62F3A302A013377001CC5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C62F3A322A013377001CC5BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 		C62F3A392A013378001CC5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C62F3A3C2A013378001CC5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C62F3A3E2A013378001CC5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E4803E2A042B5E00CBE286 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,7 @@
 		C61247FE2A013C5100DB8699 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C61247FF2A013C6200DB8699 /* DataStorage.swift */,
+				C61247FF2A013C6200DB8699 /* DataStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -68,6 +70,7 @@
 		C62F3A2F2A013377001CC5BF /* SpringAnimationApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6E4803D2A0427A800CBE286 /* Model */,
 				C62F3A472A0133B6001CC5BF /* ViewControllers */,
 				C62F3A462A0133AF001CC5BF /* Storyboards */,
 				C61247FE2A013C5100DB8699 /* Services */,
@@ -110,6 +113,14 @@
 				C62F3A342A013377001CC5BF /* MainViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6E4803D2A0427A800CBE286 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6E4803E2A042B5E00CBE286 /* Animation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +203,8 @@
 				C62F3A352A013377001CC5BF /* MainViewController.swift in Sources */,
 				C62F3A312A013377001CC5BF /* AppDelegate.swift in Sources */,
 				C62F3A332A013377001CC5BF /* SceneDelegate.swift in Sources */,
-				C61248002A013C6200DB8699 /* DataStorage.swift in Sources */,
+				C6E4803F2A042B5E00CBE286 /* Animation.swift in Sources */,
+				C61248002A013C6200DB8699 /* DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
